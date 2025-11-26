@@ -1,0 +1,201 @@
+/* ===== GENERAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;/* fuente general */
+  background: #121212;/* fondo oscuro */
+  color: white;/* texto blanco */
+}
+/* ===== LOGIN ===== */
+.auth-container {
+  width: 100vw;/* ancho completo */
+  height: 100vh;/* alto completo */
+  background: linear-gradient(180deg, #1db954, #0f0f0f);/* fondo degradado */
+  display: flex;/* usar flexbox */
+  justify-content: center;/* centrar horizontalmente */
+  align-items: center;/* centrar verticalmente */
+}
+
+.auth-card {
+  width: 350px;/* ancho fijo */
+  padding: 30px;/* espacio interno */
+  background: #181818;/* fondo oscuro */
+  border-radius: 15px;/* bordes redondeados */
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);/* sombra */
+  text-align: center;/* centrar texto */
+}
+
+.auth-card input,
+.auth-card button {
+  width: 90%;/* ancho */
+  padding: 12px;/* espacio interno */
+  margin: 10px 0;/* margen */
+  border-radius: 8px;/* bordes redondeados */
+  border: none;/* sin borde */
+}
+
+.auth-card button {
+  background: #1db954;/* fondo verde */
+  color: black;/* texto negro */
+  font-weight: bold;/* texto en negrita */
+  cursor: pointer;/* cursor puntero */
+}
+
+/* ===== SPOTIFY LAYOUT ===== */
+.spotify-clone {
+  display: flex;/* usar flexbox */
+  height: 100vh;/* alto completo */
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 250px;/* ancho fijo */
+  background: #000000;/* fondo negro */
+  padding: 20px;/* espacio interno */
+  box-sizing: border-box;/* incluir padding en el tamaño */
+}
+
+.sidebar-item {
+  padding: 12px 0;/* padding vertical */
+  cursor: pointer;/* cursor puntero */  
+}
+
+/* PLAYLISTS */
+.sidebar-playlists {
+  margin-top: 25px;/* margen superior */
+  display: flex;/* usar flexbox */
+  flex-direction: column;/* dirección columna */
+  gap: 15px;/* espacio entre elementos */
+}
+
+.playlist-item {
+  display: flex;/* usar flexbox */
+  align-items: center;/* centrar verticalmente */
+  gap: 12px;/* espacio entre elementos */
+  padding: 8px;/* espacio interno */
+  border-radius: 8px;/* bordes redondeados */
+  transition: 0.2s;/* transición suave */
+  background: transparent;/* fondo transparente */
+}
+
+.playlist-item:hover {
+  background: rgba(255,255,255,0.03);/* fondo al pasar el mouse */
+}
+
+.playlist-cover {
+  width: 55px;/* ancho */
+  height: 55px;/* alto */
+  border-radius: 8px;/* bordes redondeados */
+  object-fit: cover;/* ajustar imagen */
+  cursor: pointer;/* cursor puntero */
+}
+
+/* MAIN */
+.main-container {
+  flex: 1;/* ocupar todo el espacio disponible */
+  background: #181818;/* fondo oscuro */
+  display: flex;/* usar flexbox */
+  flex-direction: column;/* dirección columna */
+  padding-bottom: 90px; /* espacio para barra inferior */
+}
+
+.search-bar {
+  width: 90%;/* ancho */
+  margin: 20px;/* margen */
+  padding: 12px;/* espacio interno */
+  border-radius: 20px;/* bordes redondeados */
+  border: none;/* sin borde */
+}
+
+/* CONTENT AREA */
+.content-area {
+  display: flex;/* usar flexbox */
+  gap: 20px;/* espacio entre elementos */
+  padding: 20px;/* espacio interno */
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;/* ocupar todo el espacio disponible */
+}
+
+/* CARRUSEL */
+.carousel-container {
+  display: flex;/* usar flexbox */
+  gap: 25px;/* espacio entre elementos */
+  flex-wrap: nowrap;/* sin ajuste */
+  overflow: hidden;/* ocultar desbordamiento */
+}
+
+.carousel-item {
+  text-align: center;/* centrar texto */
+  opacity: 0.4;/* opacidad baja */
+  transition: 0.3s;/* transición suave */
+  flex: 0 0 auto;/* no crecer ni encoger */
+  width: 150px;/* ancho fijo */
+}
+
+.carousel-item.active {
+  opacity: 1;/* opacidad completa */
+  transform: scale(1.12);/* escalar */
+}
+
+.carousel-item img {
+  width: 150px;/* ancho fijo */
+  border-radius: 15px;/* bordes redondeados */
+}
+
+/* RIGHT PANEL */
+.now-playing-details {
+  width: 300px;/* ancho fijo */
+  padding: 20px;/* espacio interno */
+  background: #111;/* fondo oscuro */
+  border-radius: 10px;/* bordes redondeados */
+  box-sizing: border-box;/* incluir padding en el tamaño */
+}
+
+.now-playing-cover {
+  width: 100%;/* ancho completo */
+  border-radius: 10px;/* bordes redondeados */
+}
+
+/* ===== PLAYER FIXED AT BOTTOM ===== */
+.playback-bar {
+  position: fixed;/* posición fija */
+  bottom: 0;/* abajo */
+  left: 0;/* a la izquierda */
+  width: 100%;/* ancho completo */
+  height: 85px;/* alto fijo */
+  background: #000;/* fondo negro */
+  display: flex;/* usar flexbox */
+  align-items: center;/* centrar verticalmente */
+  justify-content: space-between;/* espacio entre elementos */
+  padding: 0 25px;/* espacio interno horizontal */
+  border-top: 1px solid #222;/* borde superior */
+  z-index: 9999;/* índice z */
+}
+
+.control-btn {
+  font-size: 22px;/* tamaño de fuente */
+  background: none;/* sin fondo */
+  border: none;/* sin borde */
+  color: white;/* color blanco */
+  cursor: pointer;/* cursor puntero */
+}
+
+.play-btn {
+  font-size: 28px;/* tamaño de fuente */
+}
+
+/* estilo botones pequeños (añadir/eliminar) */
+button[title]{
+  background: rgba(255,255,255,0.03);/* fondo transparente */
+  border: none;/* sin borde */
+  color: #fff;/* color blanco */
+  padding: 6px 8px;/* espacio interno */
+  border-radius: 6px;/* bordes redondeados */
+  cursor: pointer;/* cursor puntero */
+}
+
+button[title]:hover{
+  background: rgba(255,255,255,0.06);/* fondo al pasar el mouse */
+}

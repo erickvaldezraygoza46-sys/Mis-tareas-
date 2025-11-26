@@ -1,0 +1,69 @@
+/* App.css */
+.login-container {/* Estilos para el contenedor del formulario */
+  width: 350px;/* Ajusta el ancho del contenedor */
+  background: #fff;/* Color de fondo blanco */
+  margin: 100px auto;/* Centrado horizontal y margen superior */
+  padding: 25px;/* Espaciado interno */
+  border-radius: 10px;/* Bordes redondeados */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);/* Sombra para dar profundidad */
+  text-align: center;/* Centrado del texto */
+}/* Fin de los estilos para el contenedor del formulario */
+
+.tabs {/* Estilos para las pestañas de navegación */
+  display: flex;/* Usar flexbox para alinear las pestañas */
+  justify-content: center;/* Centrar las pestañas */
+  margin-bottom: 20px;/* Espacio debajo de las pestañas */
+}/* Fin de los estilos para las pestañas de navegación */
+/* Estilos para los botones de las pestañas */
+.tabs button {/* Eliminar estilos por defecto */
+  background: none;/* Fondo transparente */
+  border: none;/* Sin borde */
+  font-size: 16px;/* Tamaño de fuente */
+  margin: 0 10px;/* Espacio entre botones */
+  border: 1px solid #ccc;/* Borde */
+  padding: 8px 20px;/* Espaciado interno */
+  cursor: pointer;/* Cambiar cursor al pasar por encima */
+  color: #555;/* Color del texto */
+}/* Fin de los estilos para los botones de las pestañas */
+/* Estilos para el botón activo de las pestañas */
+.tabs button.activo {/* Borde inferior destacado */
+  border-bottom: 3px solid #007bff;/* Color del borde */
+  color: #007bff;/* Color del texto */
+  font-weight: bold;/* Texto en negrita */
+}/* Fin de los estilos para el botón activo de las pestañas */
+/* Estilos para el formulario */
+.formulario {/* Usar flexbox para organizar los elementos del formulario */
+  display: flex;/* Mostrar como flexbox */
+  flex-direction: column;/* Dirección de los elementos en columna */
+  gap: 10px;/* Espacio entre los elementos */
+}/* Fin de los estilos para el formulario */
+/* Estilos para los campos de entrada del formulario */
+.formulario input {/* Relleno interno */
+  padding: 10px;/* Tamaño de fuente */
+  border: 1px solid #ccc;/* Borde */
+  border-radius: 5px;/* Bordes redondeados */
+}/* Fin de los estilos para los campos de entrada del formulario */
+/* Estilos para el botón de envío del formulario */
+.formulario button {/* Fondo azul */
+  background: #007bff;/* Sin borde */
+  border: none;/* Color del texto blanco */
+  color: white;/* Relleno interno */
+  padding: 10px;/* Relleno interno */
+  border-radius: 6px;/* Bordes redondeados */
+  cursor: pointer;/* Cambiar cursor al pasar por encima */
+  font-weight: bold;/* Texto en negrita */
+  transition: 0.3s;/* Transición suave */
+}/* Efecto al pasar el cursor sobre el botón */
+
+.formulario button:hover /* Cambiar el fondo al pasar el cursor */ {
+  background: #0056b3;/* Fondo azul más oscuro */
+}/* Fin de los estilos para el botón de envío del formulario */
+/* Estilos para los mensajes de error */
+.error-message {/* Color rojo */
+  color: red;/* Tamaño de fuente más pequeño */
+  font-size: 14px;/* Margen superior */
+  margin-top: -5px;/* Margen inferior */
+  margin-bottom: 10px;/* Alineación a la izquierda */
+  text-align: left;/* Fin de los estilos para los mensajes de error */
+}
+/* Estilos para el contenedor de bienvenida */
